@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "overrides": [{ "files": ["*.json", "*.js"], "options": { "tabWidth": 2 } }],
+  "arrowParens": "avoid"
+}
