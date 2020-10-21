@@ -7,6 +7,7 @@
 body {
   transition: background-color 0.6s ease-in-out;
 }
+
 *,
 :after,
 :before {
@@ -14,50 +15,37 @@ body {
   border: 0 solid #e2e8f0;
 }
 
-.header__nav a {
-  line-height: 1;
-  transition: color 0.4s ease-in-out;
-}
-
-.footer__content-social-item {
+.header__nav-item {
   position: relative;
   display: inline-block;
-  width: 76px;
-  height: 63px;
   overflow: hidden;
   opacity: 0.3;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 64px;
   letter-spacing: 0.00464286em;
   text-align: center;
   text-decoration: none;
   transition: opacity 0.2s;
 }
-.footer__content-social-item:hover {
+.header__nav-item:hover {
   opacity: 1;
 }
-.footer__content-social-item-title {
+.header__nav-item-title {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
-.footer__content-social-item-title span {
+.header__nav-item-title span {
   display: none;
 }
-
-.footer__content-social-item:hover .footer__content-social-item-title span {
+.header__nav-item:hover .header__nav-item-title span {
   transform: translateY(-105%);
 }
-.footer__content-social-item:hover
-  .footer__content-social-item-title
-  span:before {
+.header__nav-item:hover .header__nav-item-title span:before {
   transform: skewY(7deg);
 }
+
 @media (min-width: 1200px) {
-  .footer__content-social-item {
-    width: calc(33.33% - 30px);
+  .header__nav-item {
     height: auto;
     padding: 18px 0;
     line-height: normal;
@@ -65,21 +53,22 @@ body {
     opacity: 1;
     text-align: left;
   }
-  .footer__content-social-item-title span {
+  .header__nav-item-title span {
     display: inline-block;
     position: relative;
     z-index: 1;
     color: transparent;
     transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+    white-space: nowrap;
   }
-  .footer__content-social-item-title span::after,
-  .footer__content-social-item-title span::before {
+  .header__nav-item-title span::after,
+  .header__nav-item-title span::before {
     content: attr(data-text);
     display: block;
     position: absolute;
     color: #000;
   }
-  .footer__content-social-item-title span::before {
+  .header__nav-itemtitle span::before {
     top: 0;
     transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
   }

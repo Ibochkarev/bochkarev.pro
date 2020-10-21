@@ -13,17 +13,6 @@ const Home = ({ works }) => {
           </div>
         </div>
       </section>
-      <a
-        className="footer__content-social-item"
-        href="#"
-        target="_blank"
-        rel="noopener"
-        aria-label="Instagram"
-      >
-        <span className="footer__content-social-item-title">
-          <span data-text="Instagram">Instagram</span>
-        </span>
-      </a>
     </div>
   )
 }

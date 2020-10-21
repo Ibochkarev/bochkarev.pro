@@ -5,7 +5,7 @@ function Header() {
     <div className="header__wrapper">
       <header className="header container mx-auto sticky top-0 pl-5 pr-5 pt-8 pb-8">
         <div className="container flex items-center justify-between">
-          <div header__logo>
+          <div className="header__logo">
             <Link href="/">
               <a className="text-gray-800 font-bold">Bochkarev.PRO</a>
             </Link>
@@ -13,18 +13,24 @@ function Header() {
           <div className="hidden sm:flex items-center">
             <nav className="header__nav flex items-center">
               <Link href="/works">
-                <a className="relative font-medium text-xs normal-case md:uppercase hover:opacity-75 text-gray-800">
-                  Работы
+                <a className="header__nav-item relative">
+                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                    <span data-text="Работы">Работы</span>
+                  </span>
                 </a>
               </Link>
               <Link href="/about">
-                <a className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase hover:opacity-75 text-gray-800">
-                  Обо мне
+                <a className="header__nav-item md:ml-8 ml-6 relative">
+                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                    <span data-text="Обо мне">Обо мне</span>
+                  </span>
                 </a>
               </Link>
               <Link href="/blog">
-                <a className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase hover:opacity-75 text-gray-800">
-                  Блог
+                <a className="header__nav-item md:ml-8 ml-6 relative">
+                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                    <span data-text="Блог">Блог</span>
+                  </span>
                 </a>
               </Link>
             </nav>
