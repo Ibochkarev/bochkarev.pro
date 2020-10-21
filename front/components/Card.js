@@ -6,7 +6,7 @@ function Card({ work }) {
   return (
     <div className="works-item relative">
       <Link href="/works/[slug]" as={`/works/${work.slug}`}>
-        <a className="works-item__media">
+        <a className="works-item__media" aria-label={work.title}>
           <div className="works-item__image">
             <div className="relative h-full">
               <div className="pointer-events-none works-item__image-wrapper relative overflow-hidden">

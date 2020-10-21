@@ -13,21 +13,27 @@ function Header() {
           <div className="hidden sm:flex items-center">
             <nav className="header__nav flex items-center">
               <Link href="/works">
-                <a className="header__nav-item relative">
+                <a className="header__nav-item relative" aria-label="Работы">
                   <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Работы">Работы</span>
                   </span>
                 </a>
               </Link>
               <Link href="/about">
-                <a className="header__nav-item md:ml-8 ml-6 relative">
+                <a
+                  className="header__nav-item md:ml-8 ml-6 relative"
+                  aria-label="Обо мне"
+                >
                   <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Обо мне">Обо мне</span>
                   </span>
                 </a>
               </Link>
               <Link href="/blog">
-                <a className="header__nav-item md:ml-8 ml-6 relative">
+                <a
+                  className="header__nav-item md:ml-8 ml-6 relative"
+                  aria-label="Блог"
+                >
                   <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Блог">Блог</span>
                   </span>
@@ -36,7 +42,7 @@ function Header() {
             </nav>
           </div>
           <div className="block sm:hidden">
-            <button className="header__burger">
+            <button className="header__burger" aria-label="Menu">
               <div>
                 <span></span>
                 <span></span>
@@ -49,17 +55,26 @@ function Header() {
         <div className="flex flex-col justify-between min-h-full">
           <nav className="flex items-center">
             <Link href="/works">
-              <a className="relative font-medium text-xs normal-case md:uppercase text-gray-800">
+              <a
+                className="relative font-medium text-xs normal-case md:uppercase text-gray-800"
+                aria-label="Работы"
+              >
                 Работы
               </a>
             </Link>
             <Link href="/about">
-              <a className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase text-gray-800">
+              <a
+                className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase text-gray-800"
+                aria-label="Обо мне"
+              >
                 Обо мне
               </a>
             </Link>
             <Link href="/blog">
-              <a className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase text-gray-800">
+              <a
+                className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase text-gray-800"
+                aria-label="Блог"
+              >
                 Блог
               </a>
             </Link>
