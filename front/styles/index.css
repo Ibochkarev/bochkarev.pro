@@ -42,9 +42,9 @@ body {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  span {
-    display: none;
-  }
+}
+.footer__content-social-item-title span {
+  display: none;
 }
 
 .footer__content-social-item:hover .footer__content-social-item-title span {

@@ -6,9 +6,9 @@ function Header() {
       <header className="header container mx-auto sticky top-0 pl-5 pr-5 pt-8 pb-8">
         <div className="container flex items-center justify-between">
           <div header__logo>
-            <a href="/" className="text-gray-800 font-bold">
-              Bochkarev.PRO
-            </a>
+            <Link href="/">
+              <a className="text-gray-800 font-bold">Bochkarev.PRO</a>
+            </Link>
           </div>
           <div className="hidden sm:flex items-center">
             <nav className="header__nav flex items-center">

@@ -1,13 +1,27 @@
 import fetch from 'isomorphic-unfetch'
+import { NextSeo } from 'next-seo'
 
 function Work({ work }) {
   console.log(work)
+
+  const SEO = {
+    title: `${work.title} | Bochkarev.PRO`,
+    description: work.description,
+    openGraph: {
+      title: `${work.title} | Bochkarev.PRO`,
+      description: work.description,
+    },
+  }
+
   return (
-    <div className="container mx-auto">
-      <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-        {work.title}
-      </h2>
-    </div>
+    <>
+      <NextSeo {...SEO} />
+      <div className="container mx-auto">
+        <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+          {work.title}
+        </h2>
+      </div>
+    </>
   )
 }
 
