@@ -4,21 +4,29 @@ function Card({ work }) {
   const { API_URL } = process.env
 
   return (
-    <div className="p-4 lg:w-1/3 md:w-full">
-      <div className="flex border-2 rounded-lg border-gray-200 p-8 sm:flex-row flex-col">
-        <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-          <img src={API_URL + work.cover.url} alt={work.title} />
-        </div>
-        <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-            {work.title}
-          </h2>
-          <p className="leading-relaxed text-base">{work.introtext}</p>
-          <Link href="/works/[slug]" as={`/works/${work.slug}`}>
-            <a className="mt-3 text-indigo-500 inline-flex items-center">
-              Learn More
-            </a>
-          </Link>
+    <div className="works-item relative">
+      <Link href="/works/[slug]" as={`/works/${work.slug}`}>
+        <a className="works-item__media">
+          <div className="works-item__image">
+            <div className="relative h-full">
+              <div className="pointer-events-none works-item__image-wrapper relative overflow-hidden">
+                <div aria-hidden="true" className="w-full"></div>
+                {/* <picture>
+                  <img
+                    className="object-cover"
+                    src={API_URL + work.cover.url}
+                  />
+                </picture> */}
+              </div>
+            </div>
+          </div>
+        </a>
+      </Link>
+      <div className="works-item__content pointer-events-none text-black">
+        <h2 className="mb-2 font-serif text-llama">{work.title}</h2>
+        <div className="case-study__subtitle">
+          <span className="case-study__services">Brand, Website</span>
+          <span className="case-study__link-text">Посмотреть проект</span>
         </div>
       </div>
     </div>

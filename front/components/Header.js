@@ -14,21 +14,21 @@ function Header() {
             <nav className="header__nav flex items-center">
               <Link href="/works">
                 <a className="header__nav-item relative">
-                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                  <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Работы">Работы</span>
                   </span>
                 </a>
               </Link>
               <Link href="/about">
                 <a className="header__nav-item md:ml-8 ml-6 relative">
-                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                  <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Обо мне">Обо мне</span>
                   </span>
                 </a>
               </Link>
               <Link href="/blog">
                 <a className="header__nav-item md:ml-8 ml-6 relative">
-                  <span className="header__nav-item-title font-medium text-xs normal-case md:uppercase text-gray-800">
+                  <span className="header__nav-item-title font-medium font-serif text-xs normal-case md:uppercase text-gray-800">
                     <span data-text="Блог">Блог</span>
                   </span>
                 </a>
