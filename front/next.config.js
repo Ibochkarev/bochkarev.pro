@@ -1,7 +1,11 @@
 const path = require('path')
+const withPWA = require('next-pwa')
 require('dotenv').config()
 
-module.exports = {
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+  },
   env: {
     API_URL: process.env.API_URL,
   },
@@ -12,4 +16,4 @@ module.exports = {
 
     return config
   },
-}
+})
