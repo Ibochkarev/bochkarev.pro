@@ -35,7 +35,28 @@
       "type": "richtext"
     },
     "slug": {
+      "type": "string",
+      "required": true
+    },
+    "type_work": {
       "type": "string"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
