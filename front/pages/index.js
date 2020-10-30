@@ -18,7 +18,7 @@ const Home = ({ works }) => {
             </div>
           </div>
         </div>
-        <section className=" container mx-auto md:my-32 md:mt-26">
+        <section className="o-container container mx-auto md:my-32 md:mt-26">
           <div className="works__grid">
             {works
               .map(work => <Card key={work.id} work={work} />)
@@ -27,7 +27,7 @@ const Home = ({ works }) => {
             <div className="c-case-studies__cta style-links">
               <Link href="/works">
                 <a className="leading-normal text-llama text-gray-700">
-                  Посмотреть все работы
+                  Посмотреть все
                 </a>
               </Link>
             </div>
