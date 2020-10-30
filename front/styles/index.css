@@ -10,6 +10,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Noto Serif', serif;
   height: 100%;
   scroll-behavior: smooth;
   transition: background-color 0.6s ease-in-out;
@@ -320,6 +321,12 @@ footer {
   .works__grid .c-case-studies__cta {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .works__grid-all .works-item:nth-child(6) {
+    grid-column: span 6 / span 6;
+  }
+  .works__grid-all .works-item {
+    grid-column: span 6 / span 6;
   }
 }
 @media (min-width: 1200px) {

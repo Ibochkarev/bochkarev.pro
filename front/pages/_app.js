@@ -13,6 +13,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <DefaultSeo {...SEO} />
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
+          rel="stylesheet"
+        ></link>
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="apple-touch-icon"

@@ -22,7 +22,12 @@ function Work({ work }) {
           <div className="project__wrapper z-1">
             <section className="project-hero container mx-auto bg-gray-200 mt-16 sm:mt-20 flex flex-col project-hero__bg">
               <div className="flex flex-col items-center flex-auto">
-                <img src={API_URL + work.cover.url} alt="" />
+                <img
+                  src={API_URL + work.cover.url}
+                  width="1216"
+                  height="760"
+                  alt={work.title}
+                ></img>
               </div>
             </section>
             <section className="py-16 bg-white sm:mt-3 md:py-24 case-intro">
@@ -55,19 +60,25 @@ function Work({ work }) {
                     <div className="w-full pl-12 md:w-4/12 md:mt-0">
                       <div>
                         <div className="animate">
-                          <Link href="/">
-                            <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                          <Link href={work.link}>
+                            <a
+                              target="_blank"
+                              rel="nore"
+                              className=" bg-teal-400 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-full"
+                            >
                               Перейти на сайт
                             </a>
                           </Link>
                         </div>
-                        <div className="animate">
+                        {work.type_work
+                          ? `<div className="animate">
                           <div className="font-serif case-intro__aside style-links c-rich-text has-line-bullets md:text-center">
                             <ul>
                               <li>Visual language</li>
                             </ul>
                           </div>
-                        </div>
+                        </div>`
+                          : ''}
                       </div>
                     </div>
                   </div>

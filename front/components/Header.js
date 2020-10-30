@@ -35,7 +35,7 @@ export default class Header extends Component {
                     </span>
                   </a>
                 </Link>
-                <Link href="/about">
+                {/* <Link href="/about">
                   <a
                     className="header__nav-item md:ml-8 ml-6 relative"
                     aria-label="Обо мне"
@@ -54,7 +54,7 @@ export default class Header extends Component {
                       <span data-text="Блог">Блог</span>
                     </span>
                   </a>
-                </Link>
+                </Link> */}
               </nav>
             </div>
             <div className="block sm:hidden">
@@ -87,7 +87,7 @@ export default class Header extends Component {
                   Работы
                 </a>
               </Link>
-              <Link href="/about">
+              {/* <Link href="/about">
                 <a
                   className="md:ml-8 ml-6 relative font-medium text-xs normal-case md:uppercase text-gray-800"
                   aria-label="Обо мне"
@@ -102,7 +102,7 @@ export default class Header extends Component {
                 >
                   Блог
                 </a>
-              </Link>
+              </Link> */}
             </nav>
           </div>
         </div>

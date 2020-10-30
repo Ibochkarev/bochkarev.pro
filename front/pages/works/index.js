@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch'
-import Card from '../components/Card'
+import Card from 'components/Card'
 import Link from 'next/link'
 
 const Home = ({ works }) => {
@@ -10,27 +10,14 @@ const Home = ({ works }) => {
           <div className="mx-auto">
             <div>
               <h1 className="font-serif text-center text-56">
-                <span>
-                  Разработка и верстка сайтов <br />
-                  на базе CMS MODX Revolution
-                </span>
+                <span>Последние проекты</span>
               </h1>
             </div>
           </div>
         </div>
         <section className="o-container container mx-auto md:my-32 md:mt-26">
-          <div className="works__grid">
-            {works
-              .map(work => <Card key={work.id} work={work} />)
-              .reverse()
-              .slice(0, 6)}
-            <div className="c-case-studies__cta style-links">
-              <Link href="/works">
-                <a className="leading-normal text-llama text-gray-700">
-                  Посмотреть все
-                </a>
-              </Link>
-            </div>
+          <div className="works__grid works__grid-all">
+            {works.map(work => <Card key={work.id} work={work} />).reverse()}
           </div>
         </section>
       </div>
