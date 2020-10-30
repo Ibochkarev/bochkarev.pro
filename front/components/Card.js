@@ -25,7 +25,7 @@ function Card({ work }) {
       <div className="works-item__content pointer-events-none text-black">
         <h2 className="mb-2 font-serif text-llama">{work.title}</h2>
         <div className="case-study__subtitle">
-          <span className="case-study__services">Brand, Website</span>
+          <span className="case-study__services">{work.type_work}</span>
           <span className="case-study__link-text">Посмотреть проект</span>
         </div>
       </div>

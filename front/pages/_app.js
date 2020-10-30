@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap"
           rel="stylesheet"
         ></link>
+        <meta name="yandex-verification" content="5c40e1e61a7065ae" />
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="apple-touch-icon"

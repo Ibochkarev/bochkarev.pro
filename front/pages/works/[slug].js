@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
+// import Image from 'next/image'
 
 function Work({ work }) {
   console.log(work)
@@ -63,22 +64,19 @@ function Work({ work }) {
                           <Link href={work.link}>
                             <a
                               target="_blank"
-                              rel="nore"
+                              rel="noopener noreferrer"
+                              aria-label={work.title}
                               className=" bg-teal-400 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-full"
                             >
                               Перейти на сайт
                             </a>
                           </Link>
                         </div>
-                        {work.type_work
-                          ? `<div className="animate">
-                          <div className="font-serif case-intro__aside style-links c-rich-text has-line-bullets md:text-center">
-                            <ul>
-                              <li>Visual language</li>
-                            </ul>
+                        <div className="animate mt-3">
+                          <div className="font-serif case-intro__aside style-links c-rich-text has-line-bullets">
+                            {work.type_work}
                           </div>
-                        </div>`
-                          : ''}
+                        </div>
                       </div>
                     </div>
                   </div>
